@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sono", sans-serif;
+    color: white;
+}
+
+body {
+    background-image: url(image/electronics.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 100vh;
+    width: 100%;
+}
+
+.pricing-plan-1,
+.pricing-plan-2,
+.pricing-plan-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    height: max-content;
+    backdrop-filter: blur(20px);
+    background-color: rgba(190, 190, 190, 0.5);
+}
+
+.pricing-plan-2 {
+    background-color: #3ccdea50;
+}
+
+.pricing-plan-3 {
+    background-color: rgba(200, 0, 255, 0.5);
+}
+
+.plan-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.plan-price {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.plan-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.plan-button {
+    padding: 10px;
+    background-color: rgba(70, 144, 255, 0.637);
+    color: #fff;
+    border-radius: 25px;
+    border: none;
+    transition: all 1s;
+}
+
+.plan-button:hover {
+    background-color: rgb(156, 70, 255);
+}
+
+@media (max-width: 1370px) {
+    .pricing-container {
+        flex-direction: column;
+    }
+}
